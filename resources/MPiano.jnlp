@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MPiano.jnlp">
+  <information>
+    <title>Midifier</title>
+    <vendor>WGSS</vendor>
+    <description>Midifier</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MPiano.jar" size="79187" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="1270" height="548" main-class="main.Launch"  name="Midifier" />
+  <update check="background"/>
+</jnlp>
