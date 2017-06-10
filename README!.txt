@@ -1,3 +1,3 @@
 Run Midifier.bat to launch the program.
 
-The source Zip contains all source code. Feel free to parse.
+The source file contains all source code. Feel free to parse. Files can be opened by via notepad or notepad++

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="110.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.aboutController">
+   <children>
+      <TextArea editable="false" prefHeight="110.0" prefWidth="200.0" text="Made by Josh Veltmeyer &#10;Made using Java 8 and JFX 2&#10;Version 1.0.1&#10;&#10;Lots of bugs remain, &#10;No fixes to come" />
+   </children>
+</AnchorPane>

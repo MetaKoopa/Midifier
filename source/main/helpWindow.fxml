@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.helpController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="394.0" prefWidth="599.0" GridPane.columnSpan="2" GridPane.rowSpan="3">
+         <children>
+            <TabPane prefHeight="500.0" prefWidth="851.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="fileTab" text="Making Files">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ScrollPane prefHeight="471.0" prefWidth="851.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="607.0" prefWidth="837.0">
+                                       <children>
+                                          <TextArea editable="false" prefHeight="555.0" prefWidth="839.0" text="Due to the current state of the program, files cannot be saved directly. &#10; &#10;" />
+                                          <ImageView fitHeight="379.0" fitWidth="812.0" layoutY="25.0">
+                                             <image>
+                                                <Image url="@highlight.png" />
+                                             </image>
+                                          </ImageView>
+                                          <TextArea editable="false" layoutY="404.0" prefHeight="200.0" prefWidth="851.0" text="The area highlighted in red in the above image is the note output. This will show the numerical value of each note played.&#10;Currently to save a file, each note value must be manually transferred to a file along with the volume and time values. In future this&#10;will be done automatically.&#10;&#10;In a file, the format is the following:&#10;Volume;Time;Note;&#10;&#10;Volume: this value is mostly personal preference, 500 is generally a good starting point.&#10;&#10;Time: When playing the program, the default BPM is currently 100. This makes single beat last 600 milliseconds.&#10;If you want to use a different BPM in your song, the note lengths can be calculated by 60000/DesiredBPM = 1 beat in milliseconds&#10;All other necessary values can be calculated from the length of a quarter note.&#10;&#10;Note: This is the note given in the output. Middle C is 60, a halfstep is the same as going up or down one number. C# is 61 etc.&#10;&#10;Example: Middle C at quarternote at 100 BPM would appear as 600;600;60;&#10;&#10;All files must be ended with 0;0;0; and can be saved as either .txt or .msng&#10;&#10;An example song can be found in the program folder in both .txt and .msng format." />
+                                       </children></AnchorPane>
+                                </content>
+                              </ScrollPane>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab fx:id="pianoTab" text="Using the Piano">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea editable="false" prefHeight="473.0" prefWidth="851.0" text="Using the Piano is really simple.&#10;&#10;Basics:&#10;&#10;Length of note is selected by pressing either 1,2,3 or 4 with 1 representing an eighth note and so on.&#10;&#10;Note played is selected by clicking a key on the piano.&#10;&#10;A rest is played by pressing &quot;R&quot; along with a time selector.&#10;&#10;&#10;Playback:&#10;&#10;When you are done playing your song, play an eighth note rest, otherwise the last note may be lost.&#10;Press &quot;play&quot; to playback what you have just played.&#10;Press &quot;reset&quot; to clear what you have just played.&#10;&#10;Currently, a reboot of the program is needed after playback.&#10;" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
